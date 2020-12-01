@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const session = require('express-session')
 const path = require('path')
+const http = require('http').createServer(app);
 
 // Adding session 
 app.use(session({
@@ -48,5 +49,10 @@ app.get('/**', (req, res) => {
 })
 
 // Listening to the port
+// const port = process.env.PORT || 3030;
+// app.listen(port, () => console.log('server is up'))
+
 const port = process.env.PORT || 3030;
-app.listen(port, () => console.log('server is up'))
+http.listen(port, () => {
+    console.log('server is up')
+});
