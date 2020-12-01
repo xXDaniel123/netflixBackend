@@ -4,9 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "server:dev": "set NODE_ENV=development && nodemon server.js",
-    "server:prod": "node server.js",
-    "start": "node server.js"
+    "start": "nodemon --exec babel-node server.js"
   },
   "author": "",
   "license": "ISC",
