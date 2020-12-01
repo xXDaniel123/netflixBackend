@@ -1,5 +1,5 @@
 const userService = require('../user/user.service')
-const CLIENT_ID = require('./key').google.clientID
+const CLIENT_ID = require('../../key').google.clientID
 
 const defaultImg = 'https://res.cloudinary.com/da0i9wy5t/image/upload/v1605376196/main-avatar_xukg9p.png'
 
