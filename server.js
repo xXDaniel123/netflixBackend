@@ -44,9 +44,13 @@ app.use('/api/google', googleRoute)
 app.use('/api/movie', movieRoute)
 app.use('/api/genre', genreRoute)
 
-app.get('/**', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
-})
+// app.get('/**', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'public', 'index.html'));
+// })
+
+app.get('/', function (req, res) {
+    res.redirect('/');
+});
 
 // Listening to the port
 // const port = process.env.PORT || 3030;
