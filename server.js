@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors')
 const app = express();
-const dotenv = require('dotenv');
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const session = require('express-session')
@@ -14,9 +13,6 @@ app.use(session({
     saveUninitialized: true,
     cookie: { secure: false }
 }))
-
-// Adding config of dotenv
-dotenv.config();
 
 // Using parsers
 app.use(cookieParser())
