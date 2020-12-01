@@ -55,13 +55,11 @@ app.use('/api/genre', genreRoute)
 
 // const port = process.env.PORT || 3030;
 
-// const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3030;
 app.get('/**', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 })
 
-app.listen(process.env.PORT || 3030);
-
-// app.listen(port, () => {
-//     console.log(`App listening on port ${port}!`)
-// });
+app.listen(port, () => {
+    console.log(`App listening on port ${port}!`)
+});
