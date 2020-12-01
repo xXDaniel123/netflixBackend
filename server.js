@@ -57,6 +57,6 @@ app.get('/*', (req, res) => {
 // app.listen(port, () => console.log('server is up'))
 
 const port = process.env.PORT || 3030;
-http.listen(port, () => {
+app.listen(port, () => {
     console.log('server is up')
 });
