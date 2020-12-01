@@ -7,10 +7,9 @@ const cookieParser = require('cookie-parser')
 const session = require('express-session')
 const path = require('path')
 
-
 // Adding session 
 app.use(session({
-    secret: 'alush the man',
+    secret: 'good morning alabama',
     resave: false,
     saveUninitialized: true,
     cookie: { secure: false }
@@ -30,7 +29,7 @@ const googleRoute = require('./api/google/google.routes.js')
 const movieRoute = require('./api/movie/movie.routes.js')
 const genreRoute = require('./api/genre/genre.routes.js')
 
-// Connect to DB
+
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.resolve(__dirname, 'public')));
 } else {
@@ -53,4 +52,5 @@ app.get('/**', (req, res) => {
 })
 
 // Listening to the port
-app.listen(3001, () => console.log('server is up'))
+const port = process.env.PORT || 3001;
+app.listen(port, () => console.log('server is up'))
