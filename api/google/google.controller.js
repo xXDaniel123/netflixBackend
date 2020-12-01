@@ -1,5 +1,6 @@
 const userService = require('../user/user.service')
-const CLIENT_ID = '168447752977-topi06sp3n60pk37e8j5dg91lnjophvi.apps.googleusercontent.com'
+const CLIENT_ID = require('./key').google.clientID
+
 const defaultImg = 'https://res.cloudinary.com/da0i9wy5t/image/upload/v1605376196/main-avatar_xukg9p.png'
 
 const {OAuth2Client} = require('google-auth-library');
