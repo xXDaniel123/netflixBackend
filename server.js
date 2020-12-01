@@ -48,5 +48,5 @@ app.get('/**', (req, res) => {
 })
 
 // Listening to the port
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 app.listen(port, () => console.log('server is up'))
