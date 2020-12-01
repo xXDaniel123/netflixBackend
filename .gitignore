@@ -1,5 +1,4 @@
-.env
-key.js
-prod.js
-dev.js
+# key.js
+# prod.js
+# dev.js
 node_modules/
