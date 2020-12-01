@@ -28,7 +28,8 @@ const genreRoute = require('./api/genre/genre.routes.js')
 
 
 if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.resolve(__dirname, 'public')));
+    // app.use(express.static(path.resolve(__dirname, 'public')));
+    pp.use(express.static('public'));
 } else {
     const corsOptions = {
         origin: ['http://127.0.0.1:8080', 'http://localhost:8080', 'http://127.0.0.1:3000', 'http://localhost:3000'],
@@ -44,15 +45,22 @@ app.use('/api/google', googleRoute)
 app.use('/api/movie', movieRoute)
 app.use('/api/genre', genreRoute)
 
-app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
-})
+// app.get('/*', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'public', 'index.html'));
+// })
 
 // Listening to the port
 // const port = process.env.PORT || 3030;
 // app.listen(port, () => console.log('server is up'))
 
+// const port = process.env.PORT || 3030;
+
+
 const port = process.env.PORT || 3030;
+app.get('/**', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+})
+
 app.listen(port, () => {
-    console.log('server is up')
+    console.log(`App listening on port ${port}!`)
 });
