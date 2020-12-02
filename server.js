@@ -7,7 +7,7 @@ const session = require('express-session')
 const path = require('path')
 const http = require('http').createServer(app);
 
-// Adding session 
+// Adding session
 app.use(session({
     secret: 'good morning alabama',
     resave: false,
