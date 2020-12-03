@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.23d4801f.chunk.css",
-    "main.js": "/static/js/main.22d85a9e.chunk.js",
-    "main.js.map": "/static/js/main.22d85a9e.chunk.js.map",
+    "main.css": "/static/css/main.131de264.chunk.css",
+    "main.js": "/static/js/main.fbd2d751.chunk.js",
+    "main.js.map": "/static/js/main.fbd2d751.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e00c13a5.js",
     "runtime-main.js.map": "/static/js/runtime-main.e00c13a5.js.map",
     "static/css/2.67810363.chunk.css": "/static/css/2.67810363.chunk.css",
-    "static/js/2.d8418c83.chunk.js": "/static/js/2.d8418c83.chunk.js",
-    "static/js/2.d8418c83.chunk.js.map": "/static/js/2.d8418c83.chunk.js.map",
+    "static/js/2.2d2b9084.chunk.js": "/static/js/2.2d2b9084.chunk.js",
+    "static/js/2.2d2b9084.chunk.js.map": "/static/js/2.2d2b9084.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.67810363.chunk.css.map": "/static/css/2.67810363.chunk.css.map",
-    "static/css/main.23d4801f.chunk.css.map": "/static/css/main.23d4801f.chunk.css.map",
-    "static/js/2.d8418c83.chunk.js.LICENSE.txt": "/static/js/2.d8418c83.chunk.js.LICENSE.txt",
+    "static/css/main.131de264.chunk.css.map": "/static/css/main.131de264.chunk.css.map",
+    "static/js/2.2d2b9084.chunk.js.LICENSE.txt": "/static/js/2.2d2b9084.chunk.js.LICENSE.txt",
     "static/media/global.scss": "/static/media/Roboto-Thin.c38fab23.ttf",
     "static/media/downArrow.720f6c4d.svg": "/static/media/downArrow.720f6c4d.svg",
+    "static/media/hamburger.e0d04c19.svg": "/static/media/hamburger.e0d04c19.svg",
     "static/media/modalArrow.20d3ba61.svg": "/static/media/modalArrow.20d3ba61.svg",
     "static/media/off.5893ca55.svg": "/static/media/off.5893ca55.svg",
     "static/media/on.f00978e4.svg": "/static/media/on.f00978e4.svg",
+    "static/media/rightArrow.9996f612.svg": "/static/media/rightArrow.9996f612.svg",
     "static/media/speaker.36124fcd.svg": "/static/media/speaker.36124fcd.svg",
     "static/media/thumbsDown.b112ce99.svg": "/static/media/thumbsDown.b112ce99.svg",
     "static/media/thumbsUp.46731bd4.svg": "/static/media/thumbsUp.46731bd4.svg"
@@ -24,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.e00c13a5.js",
     "static/css/2.67810363.chunk.css",
-    "static/js/2.d8418c83.chunk.js",
-    "static/css/main.23d4801f.chunk.css",
-    "static/js/main.22d85a9e.chunk.js"
+    "static/js/2.2d2b9084.chunk.js",
+    "static/css/main.131de264.chunk.css",
+    "static/js/main.fbd2d751.chunk.js"
   ]
 }
